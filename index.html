@@ -3,111 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Table</title>
     <style>
-        body{
+        .body{
             background-color: green;
-            margin: 25px;
-            padding: 25px;
+            padding: 10%;
+            margin: auto;
+            
+        }
+        .table{
+            border: 1px solid black;
+            font-size: 37px;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            background-color: orangered;
+        }
+        .title{
             color: white;
-            font-size:37px;
-
+            /* border: 1px solid blue; */
         }
-        #fullname{
-            width: 330px;
-            height: 50px;
-            border: 2px solid black;
-            padding: 2px;
-            margin: 2px;
-            font-size: 36px;
-        }
-        #Dob{
-            width: 330px;
-            height: 50px;
-            border: 2px solid black;
-            margin: 2px;
-            padding: 2px;
-            font-size: 36px;
-        }
-        #gender{
-            width: 30px;
-            height: 50px;
-        }
-        #religion{
-            width: 30px;
-            height: 50px;
-        }
-        .group{
-            width: 330px;
-            height: 50px;
-            border: 2px solid black;
-            padding: 2px;
-            margin: 2px;
-            font-size: 35px;
-        }
-        .submit{
-            width: auto;
-            height: 50px;
-            border: 2px solid black;
-            padding: 4px;
-            margin: 2px;
-            font-size: 35px;
-        }
-        .clear{
-            width: auto;
-            height: 50px;
-            border: 2px solid black;
-            padding: 4pxpx;
-            margin: 2px;
-            font-size: 35px;
-        }
-        .text{
-            font-size: 48px;
+        .demo{
+border: 1px solid black;
         }
     </style>
 </head>
-<body>
-    <h1>Registration form</h1>
-    <form>
-
-   
-    <div class="fullname">
-        <label for="fullname" >Full Name</label>
-        <input type="text" name="Fullname" id="fullname">
-    </div><br>
-    <div>
-        <label for="Dob" > Date of birth</label>
-        <input type="text" name="Date of birth" id="Dob">
-    </div><br>
-    <div>
-        <label for="gender" >Gender</label>
-        <input type="radio" name="Gender" id="gender" value="Male" >Male
-        <input type="radio" name="Gender" id="gender" value="femail" >Femial
-    </div><br>
-    <div>
-        <label for="religion" >Religion</label>
-        <input type="checkbox" name="Religion" id="religion" value="islam">Islam
-        <input type="checkbox" name="Religion" id="religion" value="hindu">Hindu
-    </div><br>
-    <div class="department">
-        <label for="department">Department</label>
-       <select name="department" class="group">
-        <option value="CSE">CSE</option>
-        <option value="EEE">EEE</option>
-        <option value="Low">LOW</option>
-        <option value="MSC">MSC</option>
-        <option value="english">English</option>
-       </select>
-    </div><br>
-
-    <div>
-        <label for="message">Message</label>
-        <textarea class="text" cols="50" rows="20"></textarea>
-    </div><br>
-    <div id="input-type">
-        <input class="submit" type="submit" value="Register">
-        <input class="clear" type="reset" value="clear">
-    </div>
-</form>
+<body class="body">
+    <table class="table" border="1px solid black">
+        <thead class="title" border="1px silid black">
+            <tr>
+            
+            <th>ID</th>
+            <th>Name</th>
+            <th>CGPA</th>
+        </tr>
+            
+        </thead>
+        <tbody class="demo" >
+            <tr>
+                <td>101</td>
+                <td>Sanjid</td>
+                <td>3.10</td>
+               
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Tamim</td>
+                <td>4.00</td>  
+            </tr>    
+            <tr>
+                <td>103</td>
+                <td>Musfiq</td>
+                <td>3.50</td>  
+            </tr>   
+            <tr>
+                <td>104</td>
+                <td>Rakib</td>
+                <td>3.40</td>  
+            </tr> 
+            <tr>
+                <td>105</td>
+                <td>Rashed</td>
+                <td>3.60</td>  
+            </tr>          
+        </tbody>
+    </table>
 </body>
 </html>
